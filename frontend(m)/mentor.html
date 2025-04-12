@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mentor Registration - TALKEDGE</title>
+  <link rel="stylesheet" href="mentor.css" />
+</head>
+<body>
+  <div class="mentor-container">
+    <h1>Mentor Registration</h1>
+    <form class="mentor-form" id="mentorForm">
+      <label for="mentorName">Full Name:</label>
+      <input type="text" id="mentorName" placeholder="Surname First, Then Name" required />
+
+      <label for="degree">Degree:</label>
+      <input type="text" id="degree" placeholder="e.g., MBA, M.Tech" required />
+
+      <label for="enrollId">Enrollment / University ID:</label>
+      <input type="text" id="enrollId" placeholder="Enter your ID" required />
+
+      <label for="universityName">University Name:</label>
+      <input type="text" id="universityName" placeholder="Enter university name" required />
+
+      <label for="hallTicket">College ID / Hall Ticket Upload:</label>
+      <input type="file" id="hallTicket" accept=".pdf,.jpg,.png" required />
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="experience">Experience:</label>
+      <textarea id="experience" placeholder="Mention years and areas of experience" rows="3" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("mentorForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Mentor Registered Successfully!");
+      window.location.href = "dashboard.html"; // Or any next page
+    });
+  </script>
+</body>
+</html>

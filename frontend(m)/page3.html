@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TALKEDGE - Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <div class="login-container">
+    <h1 class="title">Login to TALKEDGE</h1>
+
+    <form class="login-form">
+      <label for="name">Name <span class="hint">(Surname followed by Name)</span></label>
+      <input type="text" id="name" placeholder="Surname Firstname" required />
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" placeholder="Enter mobile number" maxlength="10" required />
+
+      <label for="otp">Enter 4-digit OTP</label>
+      <div class="otp-boxes">
+        <input type="text" maxlength="1" class="otp-input" required />
+        <input type="text" maxlength="1" class="otp-input" required />
+        <input type="text" maxlength="1" class="otp-input" required />
+        <input type="text" maxlength="1" class="otp-input" required />
+      </div>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" placeholder="example@domain.com" required />
+
+      <label for="age">Select Date of Birth</label>
+      <input type="date" id="age" required />
+
+      <button type="button" class="submit-btn" onclick="redirectToHowItWorks()">Submit</button>
+
+    </form>
+  </div>
+
+  <!-- Background Graphics -->
+  <img src="interview.png" class="graphic interview" alt="Interview Graphic" />
+  <img src="discussion.png" class="graphic discussion" alt="Group Discussion Graphic" />
+  <script>
+    function redirectToHowItWorks() {
+      // Add form validation if needed
+      window.location.href = 'page2.html';
+    }
+  </script>
+  
+</body>
+</html>
